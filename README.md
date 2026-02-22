@@ -93,6 +93,13 @@
 	then the <body>, and finally the document. This is the default behavior for most events.
 
 ### 4. What is Event Delegation in JavaScript? Why is it useful?
+	Event Delegation is a technique where you attach a single event listener to a parent element instead 
+	of multiple listeners to every child.
+	Why it’s useful:
+		Memory Efficiency: One listener uses less memory than 100 listeners.
+		Dynamic Elements: If you add a new child element via JavaScript later, the parent's listener will 
+							automatically work for it.
+	How it works: You use event.target inside the parent's listener to identify exactly which child was clicked.
 
 ### 5. What is the difference between preventDefault() and stopPropagation() methods?
 
