@@ -78,6 +78,12 @@
 	Speed: Slower
    
 ### 2. How do you create and insert a new element into the DOM?
+	Create: const newDiv = document.createElement('div');
+	Configure: newDiv.textContent = 'Hello World'; or newDiv.classList.add('active');
+	Insert:
+		parentElement.appendChild(newDiv) (Adds as the last child).
+		parentElement.prepend(newDiv) (Adds as the first child).
+		element.before() or element.after() (Adds as a sibling).
 
 ### 3. What is Event Bubbling? And how does it work?
 
