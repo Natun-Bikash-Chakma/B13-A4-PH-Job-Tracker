@@ -103,10 +103,10 @@
 
 ### 5. What is the difference between preventDefault() and stopPropagation() methods?
 		event.preventDefault(): Stops the browser's default action.
-		Example: Stops a link from opening a URL or a form from refreshing the page on submit.
-					event.stopPropagation(): Stops the event from bubbling up.
-		Example: If you click a "Delete" button inside a clickable card, you use stopPropagation() to ensure 
-					the "Delete" action happens without also triggering the "Open Card" action.
+						Example: Stops a link from opening a URL or a form from refreshing the page on submit.
+		event.stopPropagation(): Stops the event from bubbling up.
+						Example: If you click a "Delete" button inside a clickable card, you use stopPropagation() 
+								to ensure the "Delete" action happens without also triggering the "Open Card" action.
 
 ---
 
