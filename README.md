@@ -57,10 +57,25 @@
 ## Answers to Questions
 
 ### 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
-   Method -> getElementById |	Returns-> A single Element	| Selects By-> ID only	| Speed-> Fastest
-   Method -> getElementsByClassName |	Returns-> An HTMLCollection (live) |	Selects By-> Class name only	| Speed-> Fast
-   Method -> querySelector |	Returns-> The first matching Element |	Selects By-> Any CSS Selector (.class, #id, div > p)	| Speed-> Slower
-   Method -> querySelectorAll	| Returns-> A NodeList (static) |	Selects By-> Any CSS Selector	| Speed-> Slower
+	getElementById
+	Returns: A single Element
+	Selects By: ID only
+	Speed: Fastest
+	
+	getElementsByClassName
+	Returns: An HTMLCollection (live)
+	Selects By: Class name only
+	Speed: Fast
+	
+	querySelector
+	Returns: The first matching Element
+	Selects By: Any CSS Selector (.class, #id, div > p)
+	Speed: Slower
+	
+	querySelectorAll
+	Returns: A NodeList (static)
+	Selects By: Any CSS Selector
+	Speed: Slower
    
 ### 2. How do you create and insert a new element into the DOM?
 
