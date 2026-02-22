@@ -86,9 +86,11 @@
 		element.before() or element.after() (Adds as a sibling).
 
 ### 3. What is Event Bubbling? And how does it work?
-	Event Bubbling is a way of event propagation where an event hits the innermost element first and then "bubbles up" through its ancestors in the DOM tree.
+	Event Bubbling is a way of event propagation where an event hits the innermost element
+	first and then "bubbles up" through its ancestors in the DOM tree.
 	How it works:
-	If you click a <button> inside a <div>, the click event fires on the button first, then the <div>, then the <body>, and finally the document. This is the default behavior for most events.
+	If you click a <button> inside a <div>, the click event fires on the button first, then the <div>, 
+	then the <body>, and finally the document. This is the default behavior for most events.
 
 ### 4. What is Event Delegation in JavaScript? Why is it useful?
 
