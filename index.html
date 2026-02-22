@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+        .active-tab { background-color: #2563eb !important; color: white !important; }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen p-4 md:p-12 font-sans">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-2xl font-bold text-slate-800 mb-6">Job Application Tracker</h1>
+
+        <!-- Dashboard Stats -->
+        <div class="grid grid-cols-3 gap-4 mb-10">
+            <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
+                <p class="text-xs text-slate-500 font-bold mb-1 uppercase tracking-tight">Total</p>
+                <h2 id="total-count" class="text-3xl font-bold text-slate-800">0</h2>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
+                <p class="text-xs text-emerald-500 font-bold mb-1 uppercase tracking-tight">Interview</p>
+                <h2 id="interview-count" class="text-3xl font-bold text-emerald-500">0</h2>
+            </div>
+            <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
+                <p class="text-xs text-rose-500 font-bold mb-1 uppercase tracking-tight">Rejected</p>
+                <h2 id="rejected-count" class="text-3xl font-bold text-rose-500">0</h2>
+            </div>
+        </div>
+
+        <!-- Available Jobs Header -->
+        <div class="flex justify-between items-center mb-6">
+            <h3 class="text-lg font-bold text-slate-800">Available Jobs</h3>
+            <!-- DYNAMIC COUNT: 1 of 8 Jobs -->
+            <span id="tab-job-count" class="text-sm font-medium text-slate-400">0 of 0 Jobs</span>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex gap-2 mb-8">
+            <button class="tab-btn px-4 py-3 text-xs font-bold rounded bg-blue-600 text-white active-tab" data-tab="all">All</button>
+            <button class="tab-btn px-4 py-3 text-xs font-bold rounded bg-gray-200 text-slate-600 hover:bg-gray-300 transition-colors" data-tab="interview">Interview</button>
+            <button class="tab-btn px-4 py-3 text-xs font-bold rounded bg-gray-200 text-slate-600 hover:bg-gray-300 transition-colors" data-tab="rejected">Rejected</button>
+        </div>
+
+        <!-- Jobs Container -->
+        <div id="job-container" class="space-y-6">
+            <!-- Cards injected by JS -->
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
